@@ -1,6 +1,5 @@
 import pika
 import json
-import ast
 import pandas as pd
 
 credentials = pika.PlainCredentials(username='admin', password='admin')
