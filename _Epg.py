@@ -25,7 +25,7 @@ chan_table=pd.read_sql_query('SELECT * FROM public."Epg_Chann02"',con=engine.con
 # chan_table=pd.read_excel(r'E:\sourcecode\epg_nginx01\chan_table3.xlsx', index_col=False)
 chan_table['code']=chan_table['code'].astype(str)
 
-v_point = '12/18/2021'
+v_point = '12/21/2021'
 v_point = datetime.strptime(v_point, "%m/%d/%Y")
 print('-----Epg GET-----')
 

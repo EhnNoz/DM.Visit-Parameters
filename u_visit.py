@@ -9,7 +9,7 @@ es = Elasticsearch(hosts="http://norozzadeh:Kibana@110$%^@192.168.143.34:9200")
 
 #______Read event  & epg file_______
 
-s_point='2021-12-18'
+s_point='2021-12-19'
 event_i=1
 session_i=1
 
@@ -230,9 +230,9 @@ for day in range(0,365):
             import json
             import ast
 
-            credentials = pika.PlainCredentials(username='admin', password='admin')
+            credentials = pika.PlainCredentials(username='admin', password='R@bbitMQ1!')
             connection = pika.BlockingConnection(
-                pika.ConnectionParameters(host='192.168.143.17', port=5672, credentials=credentials))
+                pika.ConnectionParameters(host='192.168.143.39', port=5672, credentials=credentials))
 
             channel = connection.channel()
 
